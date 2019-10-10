@@ -1,0 +1,105 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.font-18{
+    font-size: 18px !important;
+}
+.font-bold{
+    font-weight: bold !important;
+}
+.font-bolder{
+    font-weight: bolder !important;
+}
+.font-25{
+    font-size: 25px !important;
+}
+
+/* 阿里图标 */
+@font-face {
+    font-family: 'subscribe';  /* project id 1443901 */
+    src: url('//at.alicdn.com/t/font_1443901_fnvlpepmjoe.eot');
+    src: url('//at.alicdn.com/t/font_1443901_fnvlpepmjoe.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1443901_fnvlpepmjoe.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1443901_fnvlpepmjoe.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1443901_fnvlpepmjoe.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1443901_fnvlpepmjoe.svg#iconfont') format('svg');
+}
+.ali-icon{
+    font-family: 'subscribe' !important;
+    font-size: 25px;
+    font-style: normal;
+}
+.ali-icon-weixin::before{
+    content: '\e613';
+}
+.ali-icon-qq::before{
+    content: '\e7ed';
+}
+.ali-icon-facebook::before{
+    content: '\e64b';
+}
+.ali-icon-weibo::before{
+    content: '\e707';
+}
+.ali-icon-twitter::before{
+    content: '\e612';
+}
+
+/* animation */
+
+@keyframes disapper {
+    from{
+       opacity: 1
+    }
+    to{
+       opacity: 0;
+    }
+}
+@keyframes apper{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+@keyframes scale{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.5);
+    }
+}
+@keyframes moveR{
+    from{
+        margin-left: -100px;
+    }to{
+        margin-left: 0px;
+    }
+}
+@keyframes moveL{
+    from{
+        margin-left: 100px;
+        opacity: 0
+    }to{
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+.moveR-1{
+    animation: moveR 1s ease;
+}
+.moveL-1{
+    animation: moveL 1s ease;
+}
+.apper-05{
+    animation: apper 0.5s ease;
+}
+.apper-1{
+    animation: apper 1s ease;
+}
+
+.scale-1{
+    animation: scale 1s ease;
+}
